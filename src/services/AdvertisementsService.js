@@ -3,6 +3,7 @@ const prisma = new PrismaClient();
 
 exports.createAdvertisement = async function (data) {
   try {
+    console.log(1);
     const createAdvertisement = await prisma.advertisements.create({
       data: data,
     });
